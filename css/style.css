@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+}
+
+nav {
+    background-color: #666657
+}
+
+nav div a {
+    color: red;
+}
+
+a {
+    font-family: ;
+    color: black;
+    font-size: 20pxs;
+}
