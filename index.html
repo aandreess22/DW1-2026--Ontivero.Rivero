@@ -10,32 +10,62 @@
 <body>
     <main>
         <header>
-            <!---NAV--->
-            <nav class="navbar sm:navbar-expand bg-1 fg-2">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="" alt="">
-                    </a>
-                    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                    </button>
-                    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavAltMarkup" aria-labelledby="navbarNavAltMarkupLabel">
-                        <div class="drawer-header">
-                            <h5 class="drawer-title" id="navbarNavAltMarkupLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-                        </div>
-                        <div class="drawer-body">
-                            <div class="nav nav-pills navbar-nav">
-                                <a class="nav-link" href="index">Inicio</a>
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                                <a class="nav-link" href="servicios.html">Servicios</a>
-                            </div>
-                        </div>
-                    </dialog>
+             <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-md mi-navbar">
+            <div class="container-fluid px-3 px-md-4">
+
+                <!-- Logo -->
+                <a class="navbar-brand imagen-logo" href="inicio.html"
+                   aria-label="Future Mining, ir al inicio">
+                    <img
+                        src="./imagenes/logo.svg"
+                        alt="Logo Future Mining"
+                    >
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir o cerrar menú"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner" id="inicio" aria-label="Future Mining">
+
+            <img
+                class="banner-imagen"
+                src="./imagenes/banner.png"
+                alt="Camiones de gran porte trabajando en una mina"
+            >
+        </section>
     </main>
    
 

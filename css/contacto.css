@@ -1,23 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    background-color: #ffffff;
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+header {
+    position: relative;
+}
+
+
+.mi-navbar {
+
+    width: 100%;
+    background-color: rgb(102, 102, 87, 0.7);
+    color:#ffffff;
+   
+}
+
+.imagen-logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 0;
+}
+
+.imagen-logo img {
+    display: block;
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+.mi-navbar .navbar-toggler {
+    border-color: rgb(255 255 255 / 65%);
+    padding: 0.4rem 0.65rem;
+}
+
+.mi-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgb(255 255 255 / 35%);
+}
+
+.mi-navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.mi-navbar .navbar-nav {
+    gap: clamp(0.5rem, 2.2vw, 2rem);
+}
+
+.mi-navbar .nav-link {
+    color: #ffffff;
+    font-family: 'Teko', sans-serif;
+    font-size: clamp(1.1rem, 1.5vw, 1.45rem);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    padding: 0.6rem 0.25rem;
+    transition: color 0.25s ease;
+}
+
+
+
+
+main {
+    margin: 20px;
+    border: black;
+}
+
 form {
-    background-color: azure;
-    height: 400;
-    width: 550;
-    padding: 10%;
+    background-color: #ffffff;
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ffe600;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 form div label {
-    color: black;
+    color:;
 }
 
 input {
-    background-color: blue;
+    background-color: blue ;
 }
 
 div #nombreHelp {
-    background-color: black;
+    background-color:;
 
 }
 
 footer {
     background-color: yellow;
+}
+
+#info-empresa {
+    background-color: red;
+    padding: 10px;
+}
+
+
+.footer-mineria {
+    padding-block: clamp(2rem, 4vw, 3rem);
+
+    background-color: #79796d;
+    color: #ffffff;
+}
+
+.footer-marca {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    color: #EEFF00;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-decoration: none;
+}
+
+.footer-marca:hover {
+    color: var(--color-blanco);
+}
+
+.footer-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+}
+
+.footer-datos a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.footer-datos a:hover {
+    color: var(--color-amarillo);
+}
+
+.footer-redes-titulo {
+    margin-bottom: 0.5rem;
+    font-size: clamp(0.75rem, 1vw, 0.9rem);
+    font-weight: 500;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.8rem, 1.5vw, 1.25rem);
+}
+
+.redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-negro);
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.redes-sociales a:hover,
+.redes-sociales a:focus-visible {
+    color: var(--color-amarillo);
+    transform: translateY(-0.15rem);
 }
