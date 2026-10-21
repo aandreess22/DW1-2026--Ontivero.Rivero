@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Future Mining </title>
+
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Fonts: Teko y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome: iconos externos -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+   
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-md mi-navbar">
+            <div class="container-fluid px-3 px-md-4">
+
+                <!-- Logo -->
+                <a class="navbar-brand imagen-logo" href="#inicio"
+                   aria-label="Future Mining, ir al inicio">
+                    <img
+                        src="./imagenes/logo.svg"
+                        alt="Logo Future Mining"
+                    >
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir o cerrar menú"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner" id="inicio" aria-label="Future Mining">
+
+            <img
+                class="banner-imagen"
+                src="./imagenes/banner.png"
+                alt="Camiones de gran porte trabajando en una mina"
+            >
+        </section>
+
+        
+        <section class="seccion-tarjetas py-4" id="sobre-future">
+
+            <div class="container-fluid">
+
+                <h1 class="titulo-seccion text-center mb-4">
+                    UNA MINERÍA QUE MIRA HACIA ADELANTE
+                </h1>
+
+                <div class="row justify-content-center g-4 tarjetas-container">
+
+                    <!-- San Juan -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <article class="tarjeta-minera">
+                            <img
+                                src="./imagenes/tarjetas/sj.png"
+                                alt="Explotación minera en San Juan"
+                                class="imagen-minera"
+                                loading="lazy"
+                            >
+
+                            <div class="nombre-minera">
+                                SAN JUAN
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Mendoza -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <article class="tarjeta-minera">
+                            <img
+                                src="./imagenes/tarjetas/mz.png"
+                                alt="Paisaje de actividad minera en Mendoza"
+                                class="imagen-minera"
+                                loading="lazy"
+                            >
+
+                            <div class="nombre-minera">
+                                MENDOZA
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Neuquén -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <article class="tarjeta-minera">
+                            <img
+                                src="./imagenes/tarjetas/neuq.png"
+                                alt="Paisaje natural de la provincia de Neuquén"
+                                class="imagen-minera"
+                                loading="lazy"
+                            >
+
+                            <div class="nombre-minera">
+                                NEUQUÉN
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    
+    <footer class="footer-mineria" id="contacto">
+        <div class="container">
+            <div class="row align-items-center text-center gy-4">
+
+               
+                <div class="col-12 col-md-6">
+                    <a class="footer-marca" href="#inicio">
+                        FUTURE MINING
+                    </a>
+
+                    <address class="footer-datos mb-0">
+                        <a href="mailto:info@futuremining.com">
+                            info@futuremining.com
+                        </a>
+
+                        <a href="tel:+542649999999">
+                            +54 264 9999999
+                        </a>
+
+                        <span>San Juan - Argentina</span>
+                    </address>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-12 col-md-6">
+                    <p class="footer-redes-titulo">
+                        Nuestras redes
+                    </p>
+
+                    <div class="redes-sociales">
+
+                        <a
+                            href="#"
+                        >
+                            <i class="fa-brands fa-square-facebook"
+                               aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                        >
+                            <i class="fa-brands fa-instagram"
+                               aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="Enviar correo electrónico"
+                        >
+                            <i class="fa-solid fa-envelope"
+                               aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                        >
+                            <i class="fa-brands fa-whatsapp"
+                               aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+   
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
