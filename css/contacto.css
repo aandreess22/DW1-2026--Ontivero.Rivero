@@ -1,3 +1,23 @@
+form {
+    background-color: azure;
+    height: 400;
+    width: 550;
+    padding: 10%;
+}
+
+form div label {
+    color: black;
+}
+
+input {
+    background-color: blue;
+}
+
+div #nombreHelp {
+    background-color: black;
+
+}
+
 footer {
-    background-color: aqua;
+    background-color: yellow;
 }
