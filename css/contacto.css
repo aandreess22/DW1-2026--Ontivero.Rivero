@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
+    padding-top: 7%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,7 +84,7 @@ form {
     background-color: #ffffff;
     width: 100%;
     height: auto;
-    padding: ;
+    
 }
 
 form div .form-control {
@@ -190,7 +191,9 @@ div .form-text {
 
 @media (max-width: 767.98px) {
 
-
+    body{
+        padding-top:15%;
+    }
 
     .mi-navbar .navbar-collapse {
         padding-block: 0.75rem;
