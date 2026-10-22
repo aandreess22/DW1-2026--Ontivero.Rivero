@@ -18,9 +18,8 @@ header {
 }
 
 .mi-navbar {
-
     width: 100%;
-    background-color: rgb(102, 102, 87, 0.7);
+    background-color: #666657;
     color:#ffffff;   
 }
 
@@ -67,50 +66,51 @@ header {
 }
 
 main {
-    margin: 20px;
-    border: black;
+    margin-top: 20px;
 }
 
 form {
     background-color: #ffffff;
-    width:100%;
+    width: 20rem;
     height: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
-form div input {
-    background-color: blue ;
+form div .form-control {
+    background-color: #666657;
 }
 
 form div label {
     color: #8c8c00;
+    font-size: 20px;
 }
 
-
-
-div #nombreHelp {
-    background-color:;
+div .form-text {
+    font-size: 15px;
 
 }
-
 
 #carouselStacked {
-    background-color: #8c8c00;
-    width: 100%;
+    width: 120%;
     height: auto;
-    border-radius: 10px;
+}
+
+#carouselStacked .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
-    background-color: #79796d;
+    background-color: #666657;
     color: #ffffff;
 }
 
 .footer-marca {
     display: inline-block;
     margin-bottom: 0.5rem;
-
     color: #EEFF00;
     font-family: 'Teko', sans-serif;
     font-size: 1.25rem;
