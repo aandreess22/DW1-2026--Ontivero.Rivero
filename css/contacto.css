@@ -28,6 +28,8 @@ header {
     height: 85px;
 }
 
+
+
 .imagen-logo {
     display: flex;
     align-items: center;
@@ -188,9 +190,7 @@ div .form-text {
 
 @media (max-width: 767.98px) {
 
-    .mi-navbar {
-        background-color: rgb(102 102 87 / 94%);
-    }
+
 
     .mi-navbar .navbar-collapse {
         padding-block: 0.75rem;
@@ -207,7 +207,7 @@ div .form-text {
         font-size: 1.25rem;
     }
     .imagen-logo{
-        width: 60%;
+        width: 15%;
     }
 
     .banner {
@@ -238,5 +238,9 @@ div .form-text {
 
     .footer-datos {
         letter-spacing: 0.12em;
+    }
+    #menuPrincipal a{
+        color:black;
+    
     }
 }
