@@ -1,11 +1,15 @@
-* {
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Teko', sans-serif;
 }
 
 img {
@@ -19,21 +23,20 @@ header {
 
 .mi-navbar {
     width: 100%;
-    background-color: #666657;
-    color:#ffffff;   
+    background-color: rgb(102, 102, 87, 0.7);
+    color:#ffffff;
+    height: 85px;
 }
 
 .imagen-logo {
     display: flex;
     align-items: center;
-    width: 30%;
     margin: 0;
 }
 
 .imagen-logo img {
     display: block;
-    width: 30%;
-    height: auto;
+    width: 140px;
     object-fit: contain;
 }
 
@@ -65,15 +68,20 @@ header {
     transition: color 0.25s ease;
 }
 
+.mi-navbar .nav-link:hover{
+    color: #ffe600;
+}
+
 main {
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 form {
     background-color: #ffffff;
-    width: 20rem;
+    width: 100%;
     height: auto;
-    padding: 20px;
+    padding: ;
 }
 
 form div .form-control {
@@ -82,11 +90,11 @@ form div .form-control {
 
 form div label {
     color: #8c8c00;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 div .form-text {
-    font-size: 15px;
+    font-size: 12px;
 
 }
 
@@ -176,4 +184,59 @@ div .form-text {
 .redes-sociales a:focus-visible {
     color: var(--color-amarillo);
     transform: translateY(-0.15rem);
+}
+
+@media (max-width: 767.98px) {
+
+    .mi-navbar {
+        background-color: rgb(102 102 87 / 94%);
+    }
+
+    .mi-navbar .navbar-collapse {
+        padding-block: 0.75rem;
+    }
+
+    .mi-navbar .navbar-nav {
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .mi-navbar .nav-link {
+        padding: 0.5rem 0.25rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .imagen-logo{
+        width: 60%;
+    }
+
+    .banner {
+        height: 65vw;
+        min-height: 18rem;
+        max-height: 28rem;
+        
+    }
+
+    .banner-imagen {
+        object-position: 0% center;
+    }
+
+
+    .titulo-seccion {
+        max-width: 95%;
+        margin-inline: auto;
+        margin-bottom: 1.5rem ;
+    }
+
+    .tarjeta-minera {
+        width: min(80%, 19rem);
+    }
+
+    .footer-mineria {
+        padding-block: 2rem;
+    }
+
+    .footer-datos {
+        letter-spacing: 0.12em;
+    }
 }
