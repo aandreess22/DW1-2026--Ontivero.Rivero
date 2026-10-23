@@ -85,14 +85,15 @@ form {
     
 }
 
-form div .form-control {
+form .form-control {
     background-color: #666657;
-    background-color: rgb(102, 102, 87, 0.5);
-    border: solid #EEFF00 1px;
+    background-color: rgb(102, 102, 87, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-form div .form-control:hover {
+form .form-control:hover {
     color: #EEFF00;
+    border: solid #EEFF00 1px;
 }
 
 form div label {

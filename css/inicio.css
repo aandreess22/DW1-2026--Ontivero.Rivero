@@ -73,13 +73,13 @@ header {
 }
 
 .mi-navbar .nav-link:hover{
-    color: #ffe600;
+    color: #EEFF00;
 }
 
 .portada {
     position: relative;
     min-height: 500px;
-    background-image: url("../imagenes/banner.png");
+    background-image: url("../imagenes/carrusel/carrusel2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -243,6 +243,9 @@ header {
 
 @media (max-width: 767.98px) {
 
+    .mi-navbar {
+        position: relative;
+    }
 
     .mi-navbar .navbar-collapse {
         padding-block: 0.75rem;
