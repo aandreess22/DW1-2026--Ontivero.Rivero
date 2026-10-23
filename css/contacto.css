@@ -200,19 +200,25 @@ div .form-text {
         padding-top:15%;
     }
 
+    header {
+        position: static;
+    }
+
     .mi-navbar .navbar-collapse {
         padding-block: 0.75rem;
     }
 
     .mi-navbar .navbar-nav {
-        align-items: stretch;
+        align-items: flex-end;
         gap: 0;
     }
 
     .mi-navbar .nav-link {
         padding: 0.5rem 0.25rem;
-        text-align: center;
         font-size: 1.25rem;
+        background-color: #666657;
+        width: 120px;
+        text-align: center;
     }
     .imagen-logo{
         width: 15%;

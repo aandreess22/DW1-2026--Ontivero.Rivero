@@ -126,8 +126,6 @@ header {
 
 }
 
-
-
 .imagen-minera {
     display: block;
 
@@ -156,10 +154,6 @@ header {
     font-weight: 500;
     text-align: center;
 }
-
-
-
-
 
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
@@ -242,9 +236,9 @@ header {
 
 
 @media (max-width: 767.98px) {
-
-    .mi-navbar {
-        position: relative;
+    
+    header {
+        position: static;
     }
 
     .mi-navbar .navbar-collapse {
@@ -252,30 +246,42 @@ header {
     }
 
     .mi-navbar .navbar-nav {
-        align-items: stretch;
+        align-items: flex-end;
         gap: 0;
+        width: 120px;
     }
 
     .mi-navbar .nav-link {
         padding: 0.5rem 0.25rem;
-        text-align: center;
         font-size: 1.25rem;
+        background-color: rgb(102, 102, 87, 0.7);
+        width: 120px;
+        text-align: center;
     }
+
     .imagen-logo{
         width: 15%;
     }
 
-    .banner {
+    .portada {
         height: 65vw;
-        min-height: 18rem;
+        min-height: 25rem;
         max-height: 28rem;
-        
+        position: relative;
     }
 
-    .banner-imagen {
-        object-position: 0% center;
+    .texto-portada {
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        font-size: 100%;
+        background-color: #666657;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px;
+        color: #ffffff;
+        padding: 5px;
+        width: 300px;
     }
-
 
     .titulo-seccion {
         max-width: 95%;
