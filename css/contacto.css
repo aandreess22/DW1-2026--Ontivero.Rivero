@@ -82,7 +82,7 @@ form {
     background-color: #ffffff;
     width: 100%;
     height: auto;
-    
+    padding: 5%;
 }
 
 form .form-control {
@@ -107,8 +107,9 @@ div .form-text {
 }
 
 #carouselStacked {
-    width: 120%;
+    width: 100%;
     height: auto;
+    padding: 5%;
 }
 
 #carouselStacked .carousel-item img {
@@ -220,6 +221,7 @@ div .form-text {
         width: 120px;
         text-align: center;
     }
+    
     .imagen-logo{
         width: 15%;
     }
