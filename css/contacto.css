@@ -1,3 +1,12 @@
+:root {
+    /* Paleta de colores Future Mining */
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+    --color-oliva: #8C8C00;
+    --color-amarillo: #FFE600;
+    --color-gris: #666657;
+    }
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -5,8 +14,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    padding-top: 7%;
+    background-color: var(--color-blanco);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,14 +26,11 @@ img {
     height: auto;
 }
 
-header {
-    position: relative;
-}
-
 .mi-navbar {
+    position: relative;
     width: 100%;
-    background-color: rgb(102, 102, 87, 1);
-    color:#ffffff;
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
     height: 85px;
 }
 
@@ -70,19 +75,13 @@ header {
 }
 
 .mi-navbar .nav-link:hover{
-    color: #ffe600;
-}
-
-main {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    color: var(--color-amarillo);
 }
 
 form {
-    background-color: #ffffff;
-    width: 100%;
-    height: auto;
-    padding: 5%;
+    background-color: rgb(102, 102, 87, 0.6);
+    max-width: 600px;
+    border-radius: 10px;
 }
 
 form .form-control {
@@ -92,29 +91,34 @@ form .form-control {
 }
 
 form .form-control:hover {
-    color: #EEFF00;
-    border: solid #EEFF00 1px;
+    color: var(--color-amarillo);
+    border: solid #EEFF00 2px;
 }
 
 form div label {
-    color: #8c8c00;
+    color: var(--color-oliva);
     font-size: 18px;
 }
 
 div .form-text {
     font-size: 12px;
-
 }
 
 #carouselStacked {
     width: 100%;
+    max-width: 600px;
     height: auto;
-    padding: 5%;
+}
+
+#carouselStacked h5 {
+    background-color: var(--color-gris);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #carouselStacked .carousel-item img {
     width: 100%;
-    height: 400px;
+    height: auto;
     object-fit: cover;
     object-position: center;
 }
@@ -197,10 +201,6 @@ div .form-text {
 
 @media (max-width: 767.98px) {
 
-    body{
-        padding-top:15%;
-    }
-
     header {
         position: static;
     }
@@ -225,18 +225,6 @@ div .form-text {
     .imagen-logo{
         width: 15%;
     }
-
-    .banner {
-        height: 65vw;
-        min-height: 18rem;
-        max-height: 28rem;
-        
-    }
-
-    .banner-imagen {
-        object-position: 0% center;
-    }
-
 
     .titulo-seccion {
         max-width: 95%;

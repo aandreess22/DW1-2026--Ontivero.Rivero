@@ -1,3 +1,12 @@
+:root {
+    /* Paleta de colores Future Mining */
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+    --color-oliva: #8C8C00;
+    --color-amarillo: #FFE600;
+    --color-gris: #666657;
+     }
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -5,7 +14,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
 }
 
 h1, h2, h3, h4, h5, h6 {
