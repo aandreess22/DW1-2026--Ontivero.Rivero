@@ -43,7 +43,7 @@ header {
     width: 100%;
     background-color: rgb(102, 102, 87, 0.75);
     color: #FFFFFF;
-    min-height: 85px;
+    height: 85px;
 }
 
 .imagen-logo {
