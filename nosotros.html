@@ -34,8 +34,7 @@
         <nav class="navbar navbar-expand-md mi-navbar fixed-top">
             <div class="container-fluid px-3 px-md-4">
 
-                <a class="navbar-brand imagen-logo" href="inicio.html"
-                   aria-label="Future Mining, ir al inicio">
+                <a class="navbar-brand imagen-logo" href="inicio.html" aria-label="Future Mining, ir al inicio">
                     <img src="./imagenes/logo.svg" alt="Logo Future Mining">
                 </a>
 
@@ -72,14 +71,71 @@
         </nav>
     </header>
 
-    <main>
-        <section class="banner-us d-flex w-100 mx-auto">
-            <img class="position-relative" src="imagenes/nosotros1.jpg" alt="Personal minero">
-            <p class="position-absolute p-3 m-3 ">Future Mining nace con una visión clara: acompañar el crecimiento de la industria minera mediante soluciones profesionales, compromiso y tecnología.
+    <main class="">
+        <section class="banner-us d-flex justify-content-center">
+            <img class="position-relative img-fluid object-fit-cover" src="imagenes/nosotros/nosotros1.jpg" alt="Personal minero">
+            <p class="position-absolute p-5 m-5">Future Mining nace con una visión clara: acompañar el crecimiento de la industria minera mediante soluciones profesionales, compromiso y tecnología.
                Desde nuestros comienzos, nos propusimos formar una empresa capaz de responder a los desafíos de un sector en constante evolución, apostando al desarrollo, la innovación y la mejora continua.
                Creemos que el progreso se construye con esfuerzo, responsabilidad y trabajo en equipo. Por eso, trabajamos con el objetivo de brindar soluciones eficientes, generar confianza y contribuir al desarrollo de cada proyecto en el que participamos.
                Nuestro compromiso es mirar hacia adelante, impulsar nuevas oportunidades y construir hoy la minería del futuro.</p>
         </section>
+
+        <!-- CARRUSEL -->
+        <div class="col-12 col-md-6">
+            <div id="carouselStacked" class="carousel slide w-100 mx-auto m-3 p-3">
+
+                <!-- TÍTULO Y BOTONES -->
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center gap-3 mb-3">
+
+                    <h5 class="mb-0 titulo-carrusel text-center">IMPULSAMOS EL FUTURO DE LA MINERÍA</h5>
+
+                    <div class="controles-carrusel d-flex justify-content-center gap-2">
+                        <button class="btn-icon" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev" aria-label="Imagen anterior">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+
+                        <button class="btn-icon" type="button" data-bs-target="#carouselStacked" data-bs-slide="next" aria-label="Imagen siguiente">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- IMÁGENES -->
+                <div class="carousel-inner rounded-4 overflow-hidden">
+
+                    <div class="carousel-item active">
+                        <div class="ratio ratio-4x3">
+                            <img src="imagenes/carrusel/carrusel1.jfif" class="d-block w-100 h-100 object-fit-cover" alt="Actividad minera">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="ratio ratio-4x3">
+                            <img src="imagenes/carrusel/carrusel2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Equipamiento minero" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="ratio ratio-4x3">
+                            <img src="imagenes/carrusel/carrusel3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Equipamiento minero" loading="lazy">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- INDICADORES -->
+                <div class="carousel-indicators indicadores-carrusel">
+                    <button type="button" data-bs-target="#carouselStacked" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+
+                    <button type="button" data-bs-target="#carouselStacked" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+
+                    <button type="button" data-bs-target="#carouselStacked" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
     <!-- FOOTER -->

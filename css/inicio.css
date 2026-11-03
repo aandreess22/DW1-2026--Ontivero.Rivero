@@ -87,10 +87,10 @@ header {
 
 .portada {
     position: relative;
-    min-height: 500px;
-    background-image: url("../imagenes/carrusel/carrusel2.jpg");
+    height: 600px;
+    background-image: url(../imagenes/banner1.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .texto-portada {
