@@ -82,12 +82,22 @@ header {
     color: #ffe600;
 }
 
-.banner-us {
-    
+.banner-nosotros {
+    width: 100%;
 }
 
-.banner-us p {
-    background-color: var(--color-amarillo);
+.imagen-nosotros {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.texto-nosotros p {
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
 }
 
 .footer-mineria {
@@ -193,17 +203,24 @@ header {
         width: 15%;
     }
 
-    .banner-us {
-        height: 65vw;
-        min-height: 18rem;
-        max-height: 28rem;
-        
-    }
-
     .titulo-seccion {
         max-width: 95%;
         margin-inline: auto;
         margin-bottom: 1.5rem ;
+    }
+
+    .imagen-nosotros {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .texto-nosotros {
+        padding: 25px 20px;
+    }
+
+    .texto-nosotros p {
+        font-size: 16px;
+        line-height: 1.6;
     }
 
     .footer-mineria {
