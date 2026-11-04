@@ -14,8 +14,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    padding-top: 7%;
+    background-color: var(--color-blanco);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,6 +28,7 @@ img {
 
 header {
     position: relative;
+    margin-top: 85px;
 }
 
 .mi-navbar {
@@ -82,9 +82,12 @@ header {
     color: #ffe600;
 }
 
+.banner-us {
+    
+}
+
 .banner-us p {
     background-color: var(--color-amarillo);
-    opacity: 0.5;
 }
 
 .footer-mineria {
@@ -165,10 +168,6 @@ header {
 
 @media (max-width: 767.98px) {
 
-    body{
-        padding-top:15%;
-    }
-
     header {
         position: static;
     }
@@ -194,26 +193,17 @@ header {
         width: 15%;
     }
 
-    .banner {
+    .banner-us {
         height: 65vw;
         min-height: 18rem;
         max-height: 28rem;
         
     }
 
-    .banner-imagen {
-        object-position: 0% center;
-    }
-
-
     .titulo-seccion {
         max-width: 95%;
         margin-inline: auto;
         margin-bottom: 1.5rem ;
-    }
-
-    .tarjeta-minera {
-        width: min(80%, 19rem);
     }
 
     .footer-mineria {
