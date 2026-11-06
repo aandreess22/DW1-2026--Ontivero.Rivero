@@ -88,7 +88,7 @@ header {
 .portada {
     position: relative;
     height: 600px;
-    background-image: url(../imagenes/banner1.jpg);
+    background-image: url(../imagenes/banners/banner1.jpeg);
     background-size: cover;
     background-position: top;
 }
@@ -98,11 +98,15 @@ header {
     top: 40%;
     transform: translateY(-50%);
     max-width: 400px;
-    background-color: rgb(102, 102, 87, 0.7);
+    background-color: var(--color-gris);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     color: #ffffff;
     padding: 10px;
+}
+
+main {
+    background-color: var(--color-blanco);
 }
 
 .titulo-seccion {
@@ -116,8 +120,9 @@ header {
 
 .tarjetas-container {
     width: min(100%, 64rem);
-    margin-inline: auto;
+    margin-inline: auto; 
 }
+
 
 .tarjeta-minera {
     display: flex;
@@ -130,7 +135,7 @@ header {
     border-radius: 1.3rem;
     color:#EEFF00;
     background-color: #666657;
-    box-shadow: 0.25rem 0.35rem 0.25rem rgb(0 0 0 / 25%);
+    box-shadow: 0.25rem 0.35rem 0.25rem rgb(0 0 0 / 60%);
 
 
 }
