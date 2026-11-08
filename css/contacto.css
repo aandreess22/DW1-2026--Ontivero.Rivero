@@ -27,7 +27,6 @@ img {
 }
 
 .mi-navbar {
-    position: relative;
     width: 100%;
     background-color: var(--color-gris);
     color: var(--color-blanco);
@@ -78,22 +77,28 @@ img {
     color: var(--color-amarillo);
 }
 
-form {
-    background-color: rgb(102, 102, 87, 0.4);
+main {
+    margin-top: 95px;
+}
+
+.formulario-contacto {
+    background-color: rgb(102 102 87 / 40%);
     max-width: 650px;
     height: auto;
     border-radius: 10px;
 }
 
-form .form-control {
-    background-color: #666657;
-    background-color: rgb(102, 102, 87, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+.formulario-contacto .form-control {
+    background-color: var(--color-blanco);
 }
 
-form .form-control:hover {
-    color: var(--color-amarillo);
-    border: solid #EEFF00 2px;
+.formulario-contacto .form-control:hover {
+    border-color: var(--color-amarillo);
+}
+
+.formulario-contacto .form-control:focus {
+    border-color: var(--color-amarillo);
+    box-shadow: 0 0 0 0.2rem rgb(255 230 0 / 20%);
 }
 
 form div label {
@@ -106,27 +111,8 @@ form div label {
     height: auto;
 }
 
-div .form-text {
-    font-size: 12px;
-}
-
-#carouselStacked {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
-#carouselStacked h5 {
-    background-color: var(--color-gris);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#carouselStacked .carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
+.formulario-contacto .form-text {
+    font-size: 0.75rem;
 }
 
 .footer-mineria {
@@ -208,11 +194,16 @@ div .form-text {
 @media (max-width: 767.98px) {
 
     header {
-        position: static;
+        position: relative;
+    }
+
+    .mi-navbar {
+        min-height: 75px;
     }
 
     .mi-navbar .navbar-collapse {
-        padding-block: 0.75rem;
+        background-color: var(--color-gris);
+        padding: 1rem;
     }
 
     .mi-navbar .navbar-nav {
@@ -232,16 +223,6 @@ div .form-text {
         width: 15%;
     }
 
-    .titulo-seccion {
-        max-width: 95%;
-        margin-inline: auto;
-        margin-bottom: 1.5rem ;
-    }
-
-    .tarjeta-minera {
-        width: min(80%, 19rem);
-    }
-
     .footer-mineria {
         padding-block: 2rem;
     }
@@ -249,8 +230,13 @@ div .form-text {
     .footer-datos {
         letter-spacing: 0.12em;
     }
-    #menuPrincipal a{
-        color:black;
-    
+
+    .mi-navbar #menuPrincipal .nav-link {
+        color: var(--color-blanco);
+        background-color: var(--color-gris);
+    }
+
+    .mi-navbar #menuPrincipal .nav-link:hover {
+        color: var(--color-amarillo);
     }
 }

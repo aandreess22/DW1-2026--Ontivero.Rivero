@@ -31,14 +31,11 @@ header {
 }
 
 .mi-navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    z-index: 1030;
     width: 100%;
-    background-color: rgb(102, 102, 87, 0.7);
-    color:#ffffff;
     height: 85px;
+    background-color: rgb(102 102 87 / 85%);
+    color: var(--color-blanco);
 }
 
 .imagen-logo {
@@ -118,12 +115,6 @@ main {
     line-height: 1.2;
 }
 
-.tarjetas-container {
-    width: min(100%, 64rem);
-    margin-inline: auto; 
-}
-
-
 .tarjeta-minera {
     display: flex;
     flex-direction: column;
@@ -172,8 +163,8 @@ main {
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
 
-    background-color: #79796d;
-    color: #ffffff;
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
 }
 
 .footer-marca {
@@ -252,11 +243,16 @@ main {
 @media (max-width: 767.98px) {
     
     header {
-        position: static;
+        position: relative;
+    }
+
+    .mi-navbar {
+        min-height: 75px;
     }
 
     .mi-navbar .navbar-collapse {
-        padding-block: 0.75rem;
+        background-color: rgb(102 102 87 / 85%);
+        padding: 1rem;
     }
 
     .mi-navbar .navbar-nav {
@@ -268,13 +264,13 @@ main {
     .mi-navbar .nav-link {
         padding: 0.5rem 0.25rem;
         font-size: 1.25rem;
-        background-color: rgb(102, 102, 87, 0.7);
         width: 120px;
         text-align: center;
     }
 
-    .imagen-logo{
-        width: 15%;
+    .imagen-logo img {
+        width: clamp(100px, 12vw, 140px);
+        height: auto;
     }
 
     .portada {
@@ -314,9 +310,16 @@ main {
     .footer-datos {
         letter-spacing: 0.12em;
     }
-    #menuPrincipal a{
-    color:black;
+    
+    .mi-navbar #menuPrincipal .nav-link {
+        color: var(--color-blanco);
+        background-color: rgba(102 102 87 / 0);    
     }
+
+    .mi-navbar #menuPrincipal .nav-link:hover {
+        color: var(--color-amarillo);
+    }
+
 }
 
 
