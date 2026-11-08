@@ -27,11 +27,11 @@ img {
 }
 
 .mi-navbar {
-    position: relative;
     width: 100%;
     background-color: var(--color-gris);
-    color:#ffffff;
-    height: 85px;
+    color: var(--color-blanco);
+    min-height: 85px;
+    height: auto;
 }
 
 .imagen-logo {
@@ -64,7 +64,7 @@ img {
 }
 
 .mi-navbar .nav-link {
-    color: #ffffff;
+    color: var(--color-blanco);
     font-family: 'Teko', sans-serif;
     font-size: clamp(1.1rem, 1.5vw, 1.45rem);
     font-weight: 500;
@@ -75,37 +75,130 @@ img {
 }
 
 .mi-navbar .nav-link:hover{
-    color: #ffe600;
+    color: var(--color-amarillo);
+}
+
+main {
+    padding-top: 120px;
 }
 
 .banner-nosotros {
     width: 100%;
+    overflow: hidden;
 }
 
 .imagen-nosotros {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    object-fit: contain;
+}
+
+.texto-nosotros h1 {
+    color: var(--color-oliva);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.texto-nosotros h2 {
+    color: var(--color-gris);
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    margin-bottom: 1rem;
 }
 
 .texto-nosotros p {
-    font-size: clamp(14px, 1.2vw, 18px);
+    color: var(--color-gris);
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     line-height: 1.7;
     text-align: justify;
-    margin: 0;
 }
+
+#carouselStacked {
+    width: min(100%, 1100px);
+    margin-inline: auto;
+    padding: 1.5rem 0;
+}
+
+.titulo-carrusel {
+    color: var(--color-gris);
+    font-family: 'Teko', sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.btn-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    color: var(--color-blanco);
+    background-color: var(--color-gris);
+
+    border: 1px solid var(--color-gris);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.btn-icon:hover {
+    color: var(--color-negro);
+    background-color: var(--color-amarillo);
+    border-color: var(--color-amarillo);
+    transform: scale(1.08);
+}
+
+.btn-icon:focus-visible {
+    outline: 3px solid var(--color-amarillo);
+    outline-offset: 3px;
+}
+
+.controles-carrusel {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.indicadores-carrusel {
+    margin-bottom: 1rem;
+}
+
+.indicadores-carrusel button {
+    width: 20px;
+    height: 20px;
+    margin-inline: 5px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--color-blanco);
+    opacity: 0.55;
+}
+
+.indicadores-carrusel button.active {
+    background-color: var(--color-amarillo);
+    opacity: 1;
+}
+
 
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
     background-color: #666657;
-    color: #ffffff;
+    color: var(--color-blanco);
 }
 
 .footer-marca {
     display: inline-block;
     margin-bottom: 0.5rem;
-    color: #EEFF00;
+    color: var(--color-amarillo);
     font-family: 'Teko', sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
@@ -174,35 +267,25 @@ img {
 
 @media (max-width: 767.98px) {
 
-    header {
-        position: static;
-    }
-
     .mi-navbar .navbar-collapse {
-        padding-block: 0.75rem;
+        padding-block: 0.5rem 1rem 1 rem;
+        margin: 0;
     }
 
     .mi-navbar .navbar-nav {
-        align-items: flex-end;
+        width: 100%;
+        align-items: stretch;
         gap: 0;
     }
 
     .mi-navbar .nav-link {
-        padding: 0.5rem 0.25rem;
-        font-size: 1.25rem;
-        background-color: #666657;
-        width: 120px;
-        text-align: center;
-    }
-    
-    .imagen-logo{
-        width: 15%;
-    }
-
-    .titulo-seccion {
-        max-width: 95%;
-        margin-inline: auto;
-        margin-bottom: 1.5rem ;
+        display: block;
+        width: 100%;
+        padding: 0.65rem 1rem;
+        color: var(--color-blanco);
+        text-align: right;
+        background-color: transparent;
+        border-bottom: 1px solid rgb(255 255 255 / 15%);
     }
 
     .imagen-nosotros {
@@ -211,12 +294,13 @@ img {
     }
 
     .texto-nosotros {
-        padding: 25px 20px;
+        padding: 25px 20px !important;
     }
 
     .texto-nosotros p {
         font-size: 16px;
         line-height: 1.6;
+        text-align: left;
     }
 
     .footer-mineria {
@@ -226,8 +310,13 @@ img {
     .footer-datos {
         letter-spacing: 0.12em;
     }
-    #menuPrincipal a{
-        color:black;
     
+    .mi-navbar #menuPrincipal .nav-link {
+        color: var(--color-blanco);
+        background-color: var(--color-gris);
+    }
+
+    .mi-navbar #menuPrincipal .nav-link:hover {
+        color: var(--color-amarillo);
     }
 }

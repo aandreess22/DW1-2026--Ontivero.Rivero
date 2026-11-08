@@ -33,7 +33,7 @@ header {
 .mi-navbar {
     z-index: 1030;
     width: 100%;
-    height: 85px;
+    min-height: 85px;
     background-color: rgb(102 102 87 / 85%);
     color: var(--color-blanco);
 }
@@ -68,7 +68,7 @@ header {
 }
 
 .mi-navbar .nav-link {
-    color: #ffffff;
+    color: var(--color-blanco);
     font-family: 'Teko', sans-serif;
     font-size: clamp(1.1rem, 1.5vw, 1.45rem);
     font-weight: 500;
@@ -84,10 +84,12 @@ header {
 
 .portada {
     position: relative;
-    height: 600px;
-    background-image: url(../imagenes/banners/banner1.jpeg);
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../imagenes/banners/banner2.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .texto-portada {
@@ -107,7 +109,6 @@ main {
 }
 
 .titulo-seccion {
-    
     color: #8C8C00;
     font-family: 'Teko', sans-serif;
     font-size: 2rem;
@@ -241,30 +242,31 @@ main {
 
 
 @media (max-width: 767.98px) {
-    
-    header {
-        position: relative;
-    }
 
     .mi-navbar {
         min-height: 75px;
+        background-color: rgb(102 102 87 / 85%);
     }
 
     .mi-navbar .navbar-collapse {
-        background-color: rgb(102 102 87 / 85%);
-        padding: 1rem;
+        width: 100%;
+        margin: 0;
     }
 
     .mi-navbar .navbar-nav {
-        align-items: flex-end;
+        width: 100%;
+        align-items: stretch;
         gap: 0;
-        width: 120px;
     }
 
     .mi-navbar .nav-link {
-        padding: 0.5rem 0.25rem;
-        width: 120px;
-        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 0.65rem 1rem;
+        color: var(--color-blanco);
+        text-align: right;
+        background-color: transparent;
+        border-bottom: 1px solid rgb(255 255 255 / 15%);
     }
 
     .imagen-logo img {

@@ -3,6 +3,15 @@
    CONFIGURACION GENERAL
 ================================= */
 
+:root {
+    /* Paleta de colores Future Mining */
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+    --color-oliva: #8C8C00;
+    --color-amarillo: #FFE600;
+    --color-gris: #666657;
+    }
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -14,7 +23,7 @@ html {
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
+    background-color: var(--color-blanco);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,9 +50,10 @@ header {
 
 .mi-navbar {
     width: 100%;
-    background-color: rgb(102, 102, 87, 0.75);
-    color: #FFFFFF;
-    height: 85px;
+    background-color: rgb(102, 102, 87, 85%);
+    color: blanco;
+    min-height: 85px;
+    height: auto;
     position:fixed;
 }
 
@@ -250,7 +260,7 @@ header {
 }
 
 .texto-introduccion {
-    color: #666657;
+    color: var(--color-gris);
     font-size: 0.9rem;
     line-height: 1.9;
     text-align: justify;
@@ -660,26 +670,32 @@ header {
 
     .mi-navbar {
         min-height: 75px;
+        background-color: rgb(102 102 87 / 85%);
     }
 
     .mi-navbar .navbar-collapse {
-        padding-block: 0.75rem;
-        background-color: rgb(102, 102, 87, 0.95);
+        width: 100%;
+        margin: 0;
     }
 
     .mi-navbar .navbar-nav {
-        align-items: flex-end;
-        gap: 0;
         width: 100%;
+        align-items: stretch;
+        gap: 0;
     }
 
     .mi-navbar .nav-link {
+        display: block;
         width: 100%;
-        padding: 0.5rem 1rem;
-
-        color: #FFFFFF;
-        font-size: 1.25rem;
+        padding: 0.65rem 1rem;
+        color: var(--color-blanco);
         text-align: right;
+        background-color: transparent;
+        border-bottom: 1px solid rgb(255 255 255 / 15%);
+    }
+
+    .mi-navbar .nav-link:hover {
+        color: var(--color-amarillo);
     }
 
     .imagen-logo img {
