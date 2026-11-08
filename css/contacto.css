@@ -81,15 +81,29 @@ main {
     margin-top: 95px;
 }
 
+.seccion-contacto {
+    padding-block: 1.5rem;
+}
+
 .formulario-contacto {
     background-color: rgb(102 102 87 / 40%);
+    width: 100%;
     max-width: 650px;
-    height: auto;
     border-radius: 10px;
 }
 
 .formulario-contacto .form-control {
-    background-color: var(--color-blanco);
+    background-color: rgb(102 102 87 / 30%);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%);
+}
+
+.formulario-contacto label {
+    color: var(--color-oliva);
+    font-size: 18px;
+}
+
+.formulario-contacto .form-text {
+    font-size: 0.75rem;
 }
 
 .formulario-contacto .form-control:hover {
@@ -101,24 +115,30 @@ main {
     box-shadow: 0 0 0 0.2rem rgb(255 230 0 / 20%);
 }
 
-form div label {
-    color: var(--color-oliva);
-    font-size: 18px;
-}
-
 .card-map {
     max-width: 650px;
-    height: auto;
+}
+
+.card-map .card {
+    height: 100%;
 }
 
 .formulario-contacto .form-text {
     font-size: 0.75rem;
 }
 
+.banner-contacto img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
-    background-color: #666657;
-    color: #ffffff;
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
 }
 
 .footer-marca {
@@ -193,17 +213,9 @@ form div label {
 
 @media (max-width: 767.98px) {
 
-    header {
-        position: relative;
-    }
-
-    .mi-navbar {
-        min-height: 75px;
-    }
-
     .mi-navbar .navbar-collapse {
+        padding: 0.75rem;
         background-color: var(--color-gris);
-        padding: 1rem;
     }
 
     .mi-navbar .navbar-nav {
@@ -212,9 +224,7 @@ form div label {
     }
 
     .mi-navbar .nav-link {
-        padding: 0.5rem 0.25rem;
-        font-size: 1.25rem;
-        background-color: #666657;
+        color: var(--color-blanco);
         width: 120px;
         text-align: center;
     }
