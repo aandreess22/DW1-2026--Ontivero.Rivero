@@ -5,6 +5,19 @@
     --color-oliva: #8C8C00;
     --color-amarillo: #FFE600;
     --color-gris: #666657;
+
+    /* Tipografia tamaños */
+    --titulo-principal: clamp(2.5rem, 5vw, 4.5rem);
+    --titulo-secundario: clamp(1.8rem, 3.5vw, 3rem);
+
+    --texto-primario: clamp(1rem, 1.2vw, 1.125em);
+    --texto-secundario: clamp(0.875rem, 1vw, 1rem);
+
+    /* Familias tipográficas */
+
+    --fuente-titulo-principal: 'Exo2', sans-serif;
+    --fuente-titulo-secundario: 'Teko', sans-serif;
+    --fuente-texto: 'Montserrat', sans-serif;
      }
 
 *, *::after, *::before {
@@ -13,12 +26,32 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
     background-color: var(--color-blanco);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Teko', sans-serif;
+h1 {
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-principal);
+}
+
+h2 {
+    font-family: var(--fuente-titulo-secundario);
+    font-size: var(--titulo-secundario);
+}
+
+h3 {
+    font-family: var(--fuente-titulo-secundario);
+    font-size: var(--titulo-secundario);
+}
+
+h4, h5, h6 {
+    font-family: var(--fuente-titulo-secundario);
+    font-size: var(--titulo-secundario);
+}
+
+p {
+    font-family: var(--fuente-texto);
+    font-size: var(--texto-primario);    
 }
 
 img {
@@ -69,8 +102,6 @@ header {
 
 .mi-navbar .nav-link {
     color: var(--color-blanco);
-    font-family: 'Teko', sans-serif;
-    font-size: clamp(1.1rem, 1.5vw, 1.45rem);
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -79,7 +110,7 @@ header {
 }
 
 .mi-navbar .nav-link:hover{
-    color: #EEFF00;
+    color: var(--color-amarillo);
 }
 
 .portada {
@@ -100,7 +131,7 @@ header {
     background-color: var(--color-gris);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    color: #ffffff;
+    color: var(--color-blanco);
     padding: 10px;
 }
 
@@ -109,9 +140,7 @@ main {
 }
 
 .titulo-seccion {
-    color: #8C8C00;
-    font-family: 'Teko', sans-serif;
-    font-size: 2rem;
+    color: var(--color-oliva);
     font-weight: 600;
     line-height: 1.2;
 }
@@ -125,7 +154,7 @@ main {
 
     overflow: hidden;
     border-radius: 1.3rem;
-    color:#EEFF00;
+    color: var(--color-amarillo);
     background-color: #666657;
     box-shadow: 0.25rem 0.35rem 0.25rem rgb(0 0 0 / 60%);
 
@@ -153,10 +182,8 @@ main {
     padding: 0.5rem;
 
 
-    color: #EEFF00;
+    color: var(--color-amarillo);
 
-    font-family: 'Teko', sans-serif;
-    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     font-weight: 500;
     text-align: center;
 }
@@ -172,9 +199,7 @@ main {
     display: inline-block;
     margin-bottom: 0.5rem;
 
-    color: #EEFF00;
-    font-family: 'Teko', sans-serif;
-    font-size: 1.25rem;
+    color: var(--color-amarillo);
     font-weight: 500;
     letter-spacing: 0.16em;
     text-decoration: none;
@@ -190,7 +215,6 @@ main {
     align-items: center;
     gap: 0.15rem;
 
-    font-size: clamp(0.7rem, 1vw, 0.85rem);
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.2em;
@@ -208,7 +232,6 @@ main {
 
 .footer-redes-titulo {
     margin-bottom: 0.5rem;
-    font-size: clamp(0.75rem, 1vw, 0.9rem);
     font-weight: 500;
 }
 

@@ -1,10 +1,15 @@
 :root {
-    /* Paleta de colores Future Mining */
+    /* Paleta de colores */
     --color-negro: #000000;
     --color-blanco: #FFFFFF;
     --color-oliva: #8C8C00;
     --color-amarillo: #FFE600;
     --color-gris: #666657;
+
+    /* Tipografías */
+
+    
+
     }
 
 *, *::after, *::before {
