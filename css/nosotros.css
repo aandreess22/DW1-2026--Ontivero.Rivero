@@ -220,7 +220,7 @@ main {
 
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
-    background-color: #666657;
+    background-color: var(--color-gris);
     color: var(--color-blanco);
 }
 
@@ -228,11 +228,10 @@ main {
     display: inline-block;
     margin-bottom: 0.5rem;
     color: var(--color-amarillo);
-    font-family: 'Teko', sans-serif;
-    font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 0.16em;
     text-decoration: none;
+    font-size: var(--titulo-auxiliar);
 }
 
 .footer-marca:hover {
@@ -245,11 +244,12 @@ main {
     align-items: center;
     gap: 0.15rem;
 
-    font-size: clamp(0.7rem, 1vw, 0.85rem);
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.2em;
     line-height: 1.5;
+    font-size: var(--texto-secundario);
+    font-family: var(--fuente-texto);
 }
 
 .footer-datos a {
@@ -263,7 +263,8 @@ main {
 
 .footer-redes-titulo {
     margin-bottom: 0.5rem;
-    font-size: clamp(0.75rem, 1vw, 0.9rem);
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-secundario);
     font-weight: 500;
 }
 
@@ -280,7 +281,7 @@ main {
     justify-content: center;
 
     color: var(--color-negro);
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     text-decoration: none;
 
     transition:

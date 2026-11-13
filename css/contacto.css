@@ -9,9 +9,9 @@
     /* Tipografia tamaños */
     --titulo-principal: clamp(2.5rem, 5vw, 4.5rem);
     --titulo-secundario: clamp(1.8rem, 3.5vw, 3rem);
-    --titulo-auxiliar: clamp(1.5rem, 3vw, 2.750rem);
+    --titulo-auxiliar: clamp(1.5rem, 2.5vw, 2rem);
 
-    --texto-primario: clamp(1rem, 1.2vw, 1.125rem);
+    --texto-primario: clamp(1rem, 1.1vw, 1.125rem);
     --texto-secundario: clamp(0.875rem, 1vw, 1rem);
 
     /* Familias tipográficas */
