@@ -9,9 +9,9 @@
     /* Tipografia tamaños */
     --titulo-principal: clamp(2.5rem, 5vw, 4.5rem);
     --titulo-secundario: clamp(1.8rem, 3.5vw, 3rem);
-    --titulo-auxiliar: clamp(1.5rem, 3vw, 2.750rem);
+    --titulo-auxiliar: clamp(1.5rem, 2.5vw, 2rem);
 
-    --texto-primario: clamp(1.2rem, 1.2vw, 1.125rem);
+    --texto-primario: clamp(1rem, 1.1vw, 1.125rem);
     --texto-secundario: clamp(0.875rem, 1vw, 1rem);
 
     /* Familias tipográficas */
@@ -120,7 +120,8 @@ header {
 .portada {
     position: relative;
     width: 100%;
-    min-height: 600px;
+    min-height: clamp(450px, 40vw, 650px);
+
     background-image: url(../imagenes/banners/banner2.jpg);
     background-size: cover;
     background-position: center;
@@ -130,6 +131,7 @@ header {
 .texto-portada {
     position: absolute;
     top: 50%;
+    width: min(85%, 850px);
     transform: translateY(-50%);
     background-color: var(--color-gris);
     border-top-right-radius: 50px;
@@ -303,18 +305,12 @@ main {
         height: auto;
     }
 
-    .portada {
-        position: relative;
-    }
-
     .texto-portada {
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        background-color: #666657;
-        border-bottom-right-radius: 0px;
-        border-top-right-radius: 0px;
+        background-color: var(--color-gris);
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
         color: var(--color-blanco);
+        width: 100%;
     }
 
     .titulo-seccion {
