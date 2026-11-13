@@ -136,7 +136,6 @@ header {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     color: var(--color-blanco);
-
 }
 
 main {
@@ -314,14 +313,15 @@ main {
 
     .texto-portada {
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 0%;
-        font-size: 100%;
         background-color: #666657;
         border-bottom-right-radius: 40px;
         border-top-right-radius: 40px;
         color: var(--color-blanco);
     }
+
+    .texto-portada h1
 
     .titulo-seccion {
         max-width: 95%;
