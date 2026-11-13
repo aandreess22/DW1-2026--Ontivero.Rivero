@@ -315,10 +315,8 @@ main {
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
         color: var(--color-blanco);
-        width: 100%;
+        min-width: 767.98px
     }
-
-    .texto-portada h1
 
     .titulo-seccion {
         max-width: 95%;
