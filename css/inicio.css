@@ -9,14 +9,15 @@
     /* Tipografia tamaños */
     --titulo-principal: clamp(2.5rem, 5vw, 4.5rem);
     --titulo-secundario: clamp(1.8rem, 3.5vw, 3rem);
+    --titulo-auxiliar: clamp(1.5rem, 3vw, 2.750rem);
 
-    --texto-primario: clamp(1rem, 1.2vw, 1.125em);
+    --texto-primario: clamp(1rem, 1.2vw, 1.125rem);
     --texto-secundario: clamp(0.875rem, 1vw, 1rem);
 
     /* Familias tipográficas */
 
-    --fuente-titulo-principal: 'Exo2', sans-serif;
-    --fuente-titulo-secundario: 'Teko', sans-serif;
+    --fuente-titulo-principal: 'Teko', sans-serif;
+    --fuente-titulo-secundario: 'Exo2', sans-serif;
     --fuente-texto: 'Montserrat', sans-serif;
      }
 
@@ -27,6 +28,7 @@
 body {
     margin: 0;
     background-color: var(--color-blanco);
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -46,7 +48,7 @@ h3 {
 
 h4, h5, h6 {
     font-family: var(--fuente-titulo-secundario);
-    font-size: var(--titulo-secundario);
+    font-size: var(--titulo-auxiliar);
 }
 
 p {
@@ -107,6 +109,8 @@ header {
     text-transform: uppercase;
     padding: 0.6rem 0.25rem;
     transition: color 0.25s ease;
+    font-family: 'Teko', sans-serif;
+    font-size: clamp(1.5rem, 2vw, 1.75rem);
 }
 
 .mi-navbar .nav-link:hover{
@@ -125,14 +129,14 @@ header {
 
 .texto-portada {
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
-    max-width: 400px;
+    max-width: 700px;
     background-color: var(--color-gris);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     color: var(--color-blanco);
-    padding: 10px;
+
 }
 
 main {
@@ -203,6 +207,7 @@ main {
     font-weight: 500;
     letter-spacing: 0.16em;
     text-decoration: none;
+    font-size: var(--titulo-auxiliar);
 }
 
 .footer-marca:hover {
@@ -215,10 +220,11 @@ main {
     align-items: center;
     gap: 0.15rem;
 
-    font-style: normal;
     font-weight: 500;
     letter-spacing: 0.2em;
     line-height: 1.5;
+    font-size: var(--texto-secundario);
+    font-family: var(--fuente-texto);
 }
 
 .footer-datos a {
@@ -233,6 +239,8 @@ main {
 .footer-redes-titulo {
     margin-bottom: 0.5rem;
     font-weight: 500;
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-secundario);
 }
 
 .redes-sociales {
@@ -248,7 +256,7 @@ main {
     justify-content: center;
 
     color: var(--color-negro);
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     text-decoration: none;
 
     transition:
@@ -312,9 +320,7 @@ main {
         background-color: #666657;
         border-bottom-right-radius: 40px;
         border-top-right-radius: 40px;
-        color: #ffffff;
-        padding: 5px;
-        width: 300px;
+        color: var(--color-blanco);
     }
 
     .titulo-seccion {
