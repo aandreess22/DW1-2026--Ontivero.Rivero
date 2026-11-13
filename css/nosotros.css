@@ -43,7 +43,7 @@ h2 {
 
 h3 {
     font-family: var(--fuente-titulo-secundario);
-    font-size: var(--titulo-secundario);
+    font-size: var(--titulo-auxiliar);
 }
 
 h4, h5, h6 {

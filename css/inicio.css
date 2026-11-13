@@ -43,7 +43,7 @@ h2 {
 
 h3 {
     font-family: var(--fuente-titulo-secundario);
-    font-size: var(--titulo-secundario);
+    font-size: var(--titulo-auxiliar);
 }
 
 h4, h5, h6 {
@@ -131,12 +131,16 @@ header {
 .texto-portada {
     position: absolute;
     top: 50%;
+    left: 0;
+    max-height: 90%;
+    overflow-y: auto;
     width: min(85%, 850px);
     transform: translateY(-50%);
     background-color: var(--color-gris);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     color: var(--color-blanco);
+    padding: 1rem;
 }
 
 main {
@@ -205,6 +209,7 @@ main {
     font-weight: 500;
     letter-spacing: 0.16em;
     text-decoration: none;
+    font-family: var(--fuente-titulo-principal);
     font-size: var(--titulo-auxiliar);
 }
 
@@ -237,8 +242,9 @@ main {
 .footer-redes-titulo {
     margin-bottom: 0.5rem;
     font-weight: 500;
+    letter-spacing: 0.1em;
     font-family: var(--fuente-titulo-principal);
-    font-size: var(--titulo-secundario);
+    font-size: var(--titulo-auxiliar);
 }
 
 .redes-sociales {
@@ -274,7 +280,6 @@ main {
 
     .mi-navbar {
         min-height: 75px;
-        background-color: rgb(102 102 87 / 85%);
     }
 
     .mi-navbar .navbar-collapse {
@@ -294,20 +299,16 @@ main {
         padding: 0.65rem 1rem;
         color: var(--color-blanco);
         text-align: right;
-        background-color: transparent;
         border-bottom: 1px solid rgb(255 255 255 / 15%);
     }
 
     .imagen-logo img {
         width: clamp(100px, 12vw, 140px);
-        height: auto;
     }
 
     .texto-portada {
-        background-color: var(--color-gris);
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
-        color: var(--color-blanco);
+        border-radius:  0 2rem 2rem 0;
+        left: 0;
         width: 100%;
     }
 
@@ -328,13 +329,8 @@ main {
     .footer-datos {
         letter-spacing: 0.12em;
     }
-    
-    .mi-navbar #menuPrincipal .nav-link {
-        color: var(--color-blanco);
-        background-color: rgba(102 102 87 / 0);    
-    }
 
-    .mi-navbar #menuPrincipal .nav-link:hover {
+    .mi-navbar .nav-link:hover {
         color: var(--color-amarillo);
     }
 
