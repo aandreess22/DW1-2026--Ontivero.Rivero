@@ -733,8 +733,13 @@ header {
         color: var(--color-amarillo);
     }
 
+    .imagen-logo{
+        width: auto;
+    }
+
     .imagen-logo img {
-        width: 120px;
+    width: clamp(100px, 25vw, 130px);
+    height: auto;
     }
 
     .banner-servicios {

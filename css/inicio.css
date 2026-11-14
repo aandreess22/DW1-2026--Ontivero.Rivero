@@ -302,8 +302,17 @@ main {
         border-bottom: 1px solid rgb(255 255 255 / 15%);
     }
 
+    .mi-navbar .nav-link:hover {
+        color: var(--color-amarillo);
+    }
+
+    .imagen-logo{
+        width: auto;
+    }
+
     .imagen-logo img {
-        width: clamp(100px, 12vw, 140px);
+    width: clamp(100px, 25vw, 130px);
+    height: auto;
     }
 
     .texto-portada {
