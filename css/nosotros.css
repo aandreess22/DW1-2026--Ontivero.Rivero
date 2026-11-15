@@ -28,7 +28,7 @@
 body {
     margin: 0;
     background-color: var(--color-blanco);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-texto)
 }
 
 h1 {
@@ -99,9 +99,9 @@ img {
 }
 
 .mi-navbar .nav-link {
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-auxiliar);
     color: var(--color-blanco);
-    font-family: 'Teko', sans-serif;
-    font-size: clamp(1.5rem, 2vw, 1.75rem);
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -114,7 +114,7 @@ img {
 }
 
 main {
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .banner-nosotros {
@@ -122,10 +122,55 @@ main {
     overflow: hidden;
 }
 
+.banner-nosotros .container-fluid {
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
 .imagen-nosotros {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.modal-nosotros .boton-mdl {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    font-family: var(--fuente-titulo-secundario);
+    font-size: var(--texto-primario);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    border: 1px solid var(--color-negro);
+    margin-top: 5px;
+}
+
+.modal-nosotros .boton-mdl:hover {
+    color: var(--color-amarillo);
+}
+
+.modal-nosotros .modal-body img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.modal-nosotros .modal-title {
+    color: var(--color-oliva);
+    font-weight: 600;
+}
+
+.modal-nosotros .modal-body h3 {
+    color: var(--color-gris);
+    font-weight: 500;
+}
+
+.modal-nosotros .modal-body p {
+    color: var(--color-gris);
+    font-weight: 500;
 }
 
 .texto-nosotros h1 {
@@ -232,6 +277,7 @@ main {
     letter-spacing: 0.16em;
     text-decoration: none;
     font-size: var(--titulo-auxiliar);
+    font-family: var(--fuente-titulo-principal);
 }
 
 .footer-marca:hover {
@@ -264,8 +310,9 @@ main {
 .footer-redes-titulo {
     margin-bottom: 0.5rem;
     font-family: var(--fuente-titulo-principal);
-    font-size: var(--titulo-secundario);
+    font-size: var(--titulo-auxiliar);
     font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .redes-sociales {
@@ -280,7 +327,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    color: var(--color-negro);
+    color: var(--color-blanco);
     font-size: clamp(1.5rem, 2vw, 2rem);
     text-decoration: none;
 
@@ -298,7 +345,7 @@ main {
 @media (max-width: 767.98px) {
 
     .mi-navbar .navbar-collapse {
-        padding-block: 0.5rem 1rem 1 rem;
+        padding-block: 0.5rem 1rem;
         margin: 0;
     }
 
@@ -322,13 +369,8 @@ main {
         color: var(--color-amarillo);
     }
 
-    .imagen-logo{
-        width: auto;
-    }
-
     .imagen-logo img {
     width: clamp(100px, 25vw, 130px);
-    height: auto;
     }
 
     .imagen-nosotros {
@@ -337,11 +379,11 @@ main {
     }
 
     .texto-nosotros {
-        padding: 25px 20px !important;
+        padding: 1.5rem 1.25rem;
     }
 
     .texto-nosotros p {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.6;
         text-align: left;
     }
@@ -351,15 +393,10 @@ main {
     }
 
     .footer-datos {
-        letter-spacing: 0.12em;
-    }
-    
-    .mi-navbar #menuPrincipal .nav-link {
-        color: var(--color-blanco);
-        background-color: var(--color-gris);
+        letter-spacing: 0.08em;
     }
 
-    .mi-navbar #menuPrincipal .nav-link:hover {
+    .mi-navbar .nav-link:hover {
         color: var(--color-amarillo);
     }
 }

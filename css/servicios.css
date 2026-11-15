@@ -36,7 +36,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-texto);
     background-color: var(--color-blanco);
 }
 
@@ -128,8 +128,8 @@ header {
     text-transform: uppercase;
     padding: 0.6rem 0.25rem;
     transition: color 0.25s ease;
-    font-family: 'Teko', sans-serif;
-    font-size: clamp(1.5rem, 2vw, 1.75rem);
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-auxiliar);
 }
 
 .mi-navbar .nav-link:hover,
@@ -681,7 +681,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    color: #000000;
+    color: var(--color-blanco);
     font-size: clamp(1rem, 1.5vw, 1.3rem);
     text-decoration: none;
 
@@ -733,13 +733,8 @@ header {
         color: var(--color-amarillo);
     }
 
-    .imagen-logo{
-        width: auto;
-    }
-
     .imagen-logo img {
     width: clamp(100px, 25vw, 130px);
-    height: auto;
     }
 
     .banner-servicios {

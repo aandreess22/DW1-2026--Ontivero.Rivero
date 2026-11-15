@@ -28,7 +28,7 @@
 body {
     margin: 0;
     background-color: var(--color-blanco);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-texto);
 }
 
 h1 {
@@ -109,8 +109,8 @@ header {
     text-transform: uppercase;
     padding: 0.6rem 0.25rem;
     transition: color 0.25s ease;
-    font-family: 'Teko', sans-serif;
-    font-size: clamp(1.5rem, 2vw, 1.75rem);
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-auxiliar);
 }
 
 .mi-navbar .nav-link:hover{
@@ -259,7 +259,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    color: var(--color-negro);
+    color: var(--color-blanco);
     font-size: clamp(1.5rem, 2vw, 2rem);
     text-decoration: none;
 
@@ -306,13 +306,8 @@ main {
         color: var(--color-amarillo);
     }
 
-    .imagen-logo{
-        width: auto;
-    }
-
     .imagen-logo img {
     width: clamp(100px, 25vw, 130px);
-    height: auto;
     }
 
     .texto-portada {
