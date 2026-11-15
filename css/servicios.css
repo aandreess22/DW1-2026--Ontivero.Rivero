@@ -22,7 +22,7 @@
     /* Familias tipográficas */
 
     --fuente-titulo-principal: 'Teko', sans-serif;
-    --fuente-titulo-secundario: 'Exo2', sans-serif;
+    --fuente-titulo-secundario: 'Exo 2', sans-serif;
     --fuente-texto: 'Montserrat', sans-serif;
     }
 
@@ -86,7 +86,7 @@ header {
 .mi-navbar {
     width: 100%;
     background-color: rgb(102, 102, 87, 85%);
-    color: blanco;
+    color: var(--color-blanco);
     min-height: 85px;
     height: auto;
     position:fixed;
@@ -134,7 +134,7 @@ header {
 
 .mi-navbar .nav-link:hover,
 .mi-navbar .nav-link.active {
-    color: white;
+    color: var(--color-amarillo);
 }
 
 
@@ -146,8 +146,8 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-
-    min-height: 580px;
+    min-height: clamp(500px, 65vh, 750px);
+    
 
     background-image: url("../imagenes/servicios/banner.png");
     background-size: cover;
@@ -208,7 +208,7 @@ header {
 
     margin-block: 1.5rem;
 
-    background-color: #FFE600;
+    background-color: var(--color-amarillo);
 }
 
 .banner-servicios p {
@@ -216,7 +216,7 @@ header {
 
     margin-bottom: 1.8rem;
 
-    color: #FFFFFF;
+    color: var(--color-blanco);
     font-size: clamp(0.85rem, 1.2vw, 1rem);
     line-height: 1.9;
 }
@@ -224,11 +224,11 @@ header {
 .btn-banner {
     padding: 0.8rem 1.3rem;
 
-    background-color: #FFE600;
-    border: 2px solid #FFE600;
+    background-color: var(--color-amarillo);
+    border: 2px solid var(--color-amarillo);
     border-radius: 0;
 
-    color: #000000;
+    color: var(--color-negro);
 
     font-size: 0.75rem;
     font-weight: 700;
@@ -238,9 +238,9 @@ header {
 }
 
 .btn-banner:hover {
-    background-color: #8C8C00;
-    border-color: #8C8C00;
-    color: #FFFFFF;
+    background-color: var(--color-oliva);
+    border-color: var(--color-oliva);
+    color: var(--color-blanco);
 }
 
 .banner-indicador {
@@ -252,7 +252,7 @@ header {
     align-items: center;
     gap: 0.8rem;
 
-    color: #FFFFFF;
+    color: var(--color-blanco);
     font-size: 0.65rem;
     letter-spacing: 0.15em;
 }
@@ -260,7 +260,7 @@ header {
 .banner-indicador div {
     width: 45px;
     height: 2px;
-    background-color: #FFE600;
+    background-color: var(--color-amarillo);
 }
 
 
@@ -269,7 +269,7 @@ header {
 ================================= */
 
 .introduccion-servicios {
-    background-color: #FFFFFF;
+    background-color: var(--color-blanco);
 }
 
 .subtitulo-seccion {
@@ -277,7 +277,7 @@ header {
 
     margin-bottom: 0.7rem;
 
-    color: #8C8C00;
+    color: var(--color-oliva);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -288,7 +288,7 @@ header {
 
     margin-bottom: 0;
 
-    color: #000000;
+    color: var(--color-negro);
     font-size: clamp(2.4rem, 4vw, 3.5rem);
     font-weight: 600;
     line-height: 0.95;
@@ -311,7 +311,7 @@ header {
 ================================= */
 
 .seccion-cards {
-    background-color: #F2F2EF;
+    background-color: var(--color-blanco);
 }
 
 .encabezado-servicios {
@@ -327,7 +327,7 @@ header {
     margin-top: 0.8rem;
     margin-bottom: 0;
 
-    color: #666657;
+    color: var(--color-gris);
     font-size: 0.85rem;
     line-height: 1.8;
 }
@@ -341,7 +341,7 @@ header {
 
     overflow: hidden;
 
-    background-color: #FFFFFF;
+    background-color: var(--color-blanco);
     border: none;
     border-radius: 0.5rem;
 
@@ -352,8 +352,14 @@ header {
         box-shadow 0.3s ease;
 }
 
+.card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgb(0 0 0 / 12%);
+}
 
-
+.card-servicio:hover .card-imagen img {
+    transform: scale(1.05);
+}
 
 /* IMAGEN DE CARD */
 
@@ -387,10 +393,10 @@ header {
     width: 38px;
     height: 38px;
 
-    background-color: #FFE600;
-    color: #000000;
+    background-color: var(--color-amarillo);
+    color: var(--color-negro);
 
-    font-family: 'Teko', sans-serif;
+    font-family: var(--fuente-titulo-principal);
     font-size: 1.4rem;
     font-weight: 600;
 }
@@ -409,7 +415,7 @@ header {
 .categoria-servicio {
     margin-bottom: 0.4rem;
 
-    color: #8C8C00;
+    color: var(--color-oliva);
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -418,7 +424,7 @@ header {
 .card-contenido h3 {
     margin-bottom: 0.6rem;
 
-    color: #000000;
+    color: var(--color-negro);
     font-size: 2rem;
     font-weight: 600;
     line-height: 1;
@@ -429,7 +435,7 @@ header {
 
     margin-bottom: 1.4rem;
 
-    color: #666657;
+    color: var(--color-gris);
     font-size: 0.8rem;
     line-height: 1.8;
 }
@@ -443,9 +449,9 @@ header {
 
     padding-bottom: 0.3rem;
 
-    border-bottom: 2px solid #FFE600;
+    border-bottom: 2px solid var(--color-amarillo);
 
-    color: #000000;
+    color: var(--color-negro);
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -455,12 +461,12 @@ header {
 }
 
 .enlace-servicio i {
-    color: #8C8C00;
+    color: var(--color-oliva);
     transition: transform 0.25s ease;
 }
 
 .enlace-servicio:hover {
-    color: #8C8C00;
+    color: var(--color-oliva);
 }
 
 
@@ -470,13 +476,13 @@ header {
 ================================= */
 
 .seccion-diferenciales {
-    background-color: #FFFFFF;
+    background-color: var(--color-blanco);
 }
 
 .titulo-diferenciales {
     margin-bottom: 1rem;
 
-    color: #000000;
+    color: var(--color-negro);
     font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 600;
     line-height: 0.95;
@@ -485,7 +491,7 @@ header {
 .seccion-diferenciales .col-lg-5 > p {
     max-width: 450px;
 
-    color: #666657;
+    color: var(--color-gris);
     font-size: 0.85rem;
     line-height: 1.9;
 }
@@ -495,27 +501,27 @@ header {
 
     padding: 1.5rem;
 
-    background-color: #F2F2EF;
-    border-left: 4px solid #8C8C00;
+    background-color: var(--color-blanco);
+    border-left: 4px solid var(--color-oliva);
 
     transition: background-color 0.25s ease;
 }
 
 .diferencial-item:hover {
-    background-color: #FFE600;
+    background-color: var(--color-amarillo);
 }
 
 .diferencial-item i {
     margin-bottom: 0.8rem;
 
-    color: #8C8C00;
+    color: var(--color-oliva);
     font-size: 1.7rem;
 }
 
 .diferencial-item h3 {
     margin-bottom: 0.4rem;
 
-    color: #000000;
+    color: var(--color-negro);
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -523,7 +529,7 @@ header {
 .diferencial-item p {
     margin-bottom: 0;
 
-    color: #666657;
+    color: var(--color-gris);
     font-size: 0.72rem;
     line-height: 1.7;
 }
@@ -537,8 +543,8 @@ header {
     position: relative;
     overflow: hidden;
 
-    background-color: #8C8C00;
-    color: #FFFFFF;
+    background-color: var(--color-oliva);
+    color: var(--color-blanco);
 }
 
 .contacto-servicios::after {
@@ -563,7 +569,7 @@ header {
 }
 
 .contacto-servicios span {
-    color: #FFE600;
+    color: var(--color-amarillo);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -575,7 +581,7 @@ header {
     margin-top: 0.5rem;
     margin-bottom: 0.6rem;
 
-    color: #FFFFFF;
+    color: var(--color-blanco);
     font-size: clamp(3rem, 5vw, 4.5rem);
     font-weight: 600;
     line-height: 0.9;
@@ -586,7 +592,7 @@ header {
 
     margin-bottom: 0;
 
-    color: #FFFFFF;
+    color: var(--color-blanco);
     font-size: 0.85rem;
     line-height: 1.8;
 }
@@ -594,11 +600,11 @@ header {
 .btn-contacto {
     padding: 0.9rem 1.5rem;
 
-    background-color: #FFE600;
-    border: 2px solid #FFE600;
+    background-color: var(--color-amarillo);
+    border: 2px solid var(--color-amarillo);
     border-radius: 0;
 
-    color: #000000;
+    color: var(--color-negro);
 
     font-size: 0.75rem;
     font-weight: 700;
@@ -608,9 +614,9 @@ header {
 }
 
 .btn-contacto:hover {
-    background-color: #000000;
-    border-color: #000000;
-    color: #FFE600;
+    background-color: var(--color-negro);
+    border-color: var(--color-negro);
+    color: var(--color-amarillo);
 }
 
 
@@ -621,16 +627,16 @@ header {
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
 
-    background-color: #666657;
-    color: #FFFFFF;
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
 }
 
 .footer-marca {
     display: inline-block;
     margin-bottom: 0.5rem;
 
-    color: #FFE600;
-    font-family: 'Teko', sans-serif;
+    color: var(--color-amarillo);
+    font-family: var(--titulo-principal);
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 0.16em;
@@ -638,7 +644,7 @@ header {
 }
 
 .footer-marca:hover {
-    color: #FFFFFF;
+    color: var(--color-blanco);
 }
 
 .footer-datos {
@@ -655,12 +661,12 @@ header {
 }
 
 .footer-datos a {
-    color: #FFFFFF;
+    color: var(--color-blanco);
     text-decoration: none;
 }
 
 .footer-datos a:hover {
-    color: #FFE600;
+    color: var(--color-amarillo);
 }
 
 .footer-redes-titulo {
@@ -692,7 +698,7 @@ header {
 
 .redes-sociales a:hover,
 .redes-sociales a:focus-visible {
-    color: #FFE600;
+    color: var(--color-amarillo);
     transform: translateY(-0.15rem);
 }
 
@@ -702,6 +708,8 @@ header {
 ================================= */
 
 @media (max-width: 767.98px) {
+
+    /* NAVBAR */
 
     .mi-navbar {
         min-height: 75px;
@@ -723,19 +731,16 @@ header {
         display: block;
         width: 100%;
         padding: 0.65rem 1rem;
-        color: var(--color-blanco);
         text-align: right;
-        background-color: transparent;
         border-bottom: 1px solid rgb(255 255 255 / 15%);
     }
 
-    .mi-navbar .nav-link:hover {
-        color: var(--color-amarillo);
+    .imagen-logo img {
+        width: clamp(100px, 25vw, 130px);
     }
 
-    .imagen-logo img {
-    width: clamp(100px, 25vw, 130px);
-    }
+
+    /* BANNER */
 
     .banner-servicios {
         min-height: 520px;
@@ -752,12 +757,12 @@ header {
     }
 
     .banner-servicios h1 {
-        font-size: clamp(3.2rem, 13vw, 4.5rem);
+        font-size: clamp(3rem, 10vw, 4.5rem);
     }
 
     .banner-servicios p {
         max-width: 420px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .banner-indicador {
@@ -765,19 +770,25 @@ header {
         bottom: 15px;
     }
 
+
+    /* INTRODUCCION */
+
     .introduccion-servicios {
         padding-block: 3rem !important;
     }
 
     .titulo-seccion {
         max-width: 100%;
-        font-size: 2.8rem;
+        font-size: clamp(2.2rem, 7vw, 2.8rem);
     }
 
     .texto-introduccion {
-        font-size: 0.82rem;
+        font-size: 0.9rem;
         text-align: left;
     }
+
+
+    /* CARDS */
 
     .seccion-cards {
         padding-block: 3rem !important;
@@ -791,8 +802,11 @@ header {
         padding: 1.3rem;
     }
 
+
+    /* DIFERENCIALES */
+
     .titulo-diferenciales {
-        font-size: 2.8rem;
+        font-size: clamp(2.2rem, 7vw, 2.8rem);
     }
 
     .diferencial-item {
@@ -803,17 +817,23 @@ header {
         font-size: 1.45rem;
     }
 
+
+    /* CONTACTO */
+
     .contacto-servicios {
         text-align: center;
     }
 
     .contacto-servicios h2 {
-        font-size: 3.2rem;
+        font-size: clamp(2.5rem, 9vw, 3.2rem);
     }
 
     .contacto-servicios p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
+
+
+    /* FOOTER */
 
     .footer-mineria {
         padding-block: 2rem;
@@ -821,30 +841,6 @@ header {
 
     .footer-datos {
         letter-spacing: 0.12em;
-    }
-
-}
-
-@media (max-width: 400px) {
-
-    .banner-servicios h1 {
-        font-size: 3rem;
-    }
-
-    .card-imagen {
-        height: 185px;
-    }
-
-    .diferencial-item {
-        padding: 0.8rem;
-    }
-
-    .diferencial-item h3 {
-        font-size: 1.3rem;
-    }
-
-    .diferencial-item p {
-        font-size: 0.68rem;
     }
 
 }
