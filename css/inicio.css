@@ -141,6 +141,7 @@ header {
     border-bottom-right-radius: 50px;
     color: var(--color-blanco);
     padding: 1rem;
+    font-weight: 500;
 }
 
 main {
@@ -196,6 +197,10 @@ main {
     text-align: center;
 }
 
+/* ==============================
+   FOOTER
+================================= */
+
 .footer-mineria {
     padding-block: clamp(2rem, 4vw, 3rem);
     background-color: var(--color-gris);
@@ -207,8 +212,8 @@ main {
     margin-bottom: 0.5rem;
     color: var(--color-amarillo);
     font-weight: 500;
-    letter-spacing: 0.16em;
     text-decoration: none;
+    letter-spacing: 0.16em;
     font-family: var(--fuente-titulo-principal);
     font-size: var(--titulo-auxiliar);
 }
@@ -260,7 +265,7 @@ main {
     justify-content: center;
 
     color: var(--color-blanco);
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 1.750vw, 2rem);
     text-decoration: none;
 
     transition:
