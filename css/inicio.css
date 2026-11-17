@@ -161,18 +161,41 @@ header {
 }
 
 .banner-contenido {
-    width: 80%;
+    width: min(90%, 1100px);
     height: auto;
-    border-radius: 50px;
     text-align: center;
-    padding: 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
+
     position: relative;
     z-index: 1;
 }
 
+.banner-contenido h1 {
+    font-family: var(--fuente-titulo-principal);
+    font-size: var(--titulo-principal);
+    font-weight: 600;
+    color: var(--color-blanco);
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.banner-contenido p {
+    max-width: 75ch;
+    margin-inline: auto;
+
+    font-family: var(--fuente-texto);
+    font-size: var(--texto-primario);
+    font-weight: 500;
+    line-height: 1.7;
+
+    color: var(--color-blanco);
+    text-align: center;
+}
+
 .linea-decorativa {
     width: 100%;
-    border-top: 1px solid var(--color-amarillo);
+    height: 1px;
     background-color: var(--color-amarillo);
 }
 
@@ -349,6 +372,22 @@ main {
 
     .mi-navbar .nav-link:hover {
         color: var(--color-amarillo);
+    } 
+
+    .banner-contenido {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .banner-contenido h1 {
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    .banner-contenido p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
     }
 
     .imagen-logo img {

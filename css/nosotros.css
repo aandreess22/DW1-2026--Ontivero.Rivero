@@ -139,8 +139,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: clamp(500px, 65vh, 750px);
-    
+
+    min-height: clamp(650px, 85vh, 850px);
+    padding-block: 110px 40px;
 
     background-image: url("../imagenes/banners/banner-nosotros1.jpg");
     background-size: cover;
@@ -157,23 +158,19 @@ img {
 }
 
 .banner-contenido {
-    width: 80%;
+    width: min(90%, 1100px);
     height: auto;
-    border-radius: 50px;
     text-align: center;
-    padding: 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
+
     position: relative;
     z-index: 1;
 }
 
 .linea-decorativa {
     width: 100%;
-    border-top: 1px solid var(--color-amarillo);
+    height: 1px;
     background-color: var(--color-amarillo);
-}
-
-main {
-    padding-top: 100px;
 }
 
 .banner-nosotros {
@@ -193,9 +190,9 @@ main {
 }
 
 .modal-nosotros .boton-mdl {
-    width: 100%;
+    width: auto;
     height: auto;
-    background-color: var(--color-negro);
+    background-color: var(--color-oliva);
     color: var(--color-blanco);
     font-family: var(--fuente-titulo-secundario);
     font-size: var(--texto-primario);
@@ -207,9 +204,10 @@ main {
 
 .modal-nosotros .boton-mdl:hover {
     color: var(--color-amarillo);
+    background-color: var(--color-gris);
 }
 
-.modal-nosotros .modal-body img {
+.modal-body img {
     width: 100%;
     max-height: 450px;
     object-fit: cover;
@@ -217,17 +215,17 @@ main {
     margin-top: 1rem;
 }
 
-.modal-nosotros .modal-title {
+.modal-title {
     color: var(--color-oliva);
     font-weight: 600;
 }
 
-.modal-nosotros .modal-body h3 {
+.modal-body h3 {
     color: var(--color-gris);
     font-weight: 500;
 }
 
-.modal-nosotros .modal-body p {
+.modal-body p {
     color: var(--color-gris);
     font-weight: 500;
 }
