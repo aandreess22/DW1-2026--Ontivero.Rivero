@@ -32,7 +32,7 @@
     <!-- NAVBAR -->
     <header>
         <nav class="navbar navbar-expand-md mi-navbar fixed-top">
-            <div class="container-fluid px-3 px-md-4">
+            <div class="contenedor-general navbar-contenedor">
 
                 <a class="navbar-brand imagen-logo" href="index.html" aria-label="Future Mining, ir al inicio">
                     <img src="./imagenes/logo.svg" alt="Logo Future Mining">
@@ -69,16 +69,19 @@
 
             </div>
         </nav>
-    </header>
 
-    <main>
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner-servicios">
 
-        <section class="banner-nosotros">
+            <div class="banner-overlay"></div>
 
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-6">
-                        <img class="imagen-nosotros img-fluid w-100" src="imagenes/nosotros/nosotros1.jpg" alt="Personal minero">
+                    <div class="banner-contenido">
+                        <img src="imagenes/banners/banner-general.svg" alt="">
+                        <h1>SOBRE FUTURE MINING</h1>
+                        <p class="titulo-banner">
+                            Future Mining nace con una visión clara: acompañar el crecimiento de la industria minera mediante soluciones profesionales, compromiso y tecnología. Desde nuestros comienzos, nos propusimos formar una empresa capaz de responder a los desafíos de un sector en constante evolución, apostando al desarrollo, la innovación y la mejora continua. Creemos que el progreso se construye con esfuerzo, responsabilidad y trabajo en equipo. Por eso, trabajamos con el objetivo de brindar soluciones eficientes, generar confianza y contribuir al desarrollo de cada proyecto en el que participamos. Nuestro compromiso es mirar hacia adelante, impulsar nuevas oportunidades y construir hoy la minería del futuro.
+                        </p>
+                        <div class="linea-decorativa"></div>
                         <section class="modal-nosotros d-flex justify-content-center">
 
                             <button type="button" class="btn boton-mdl" data-bs-toggle="modal" data-bs-target="#modalNosotros">NUESTRA HISTORIA</button>
@@ -111,21 +114,15 @@
 
                         </section>
                     </div>
-                    <div class="texto-nosotros p-5 col-12 col-lg-6">
-                        <h1>SOBRE FUTURE MINING</h1>
-                        <h3>Construyendo el futuro de la minería</h3>
-                        <p>Future Mining nace con una visión clara: acompañar el crecimiento de la industria minera mediante soluciones profesionales, compromiso y tecnología.
-                            Desde nuestros comienzos, nos propusimos formar una empresa capaz de responder a los desafíos de un sector en constante evolución, apostando al desarrollo, la innovación y la mejora continua.
-                            Creemos que el progreso se construye con esfuerzo, responsabilidad y trabajo en equipo. Por eso, trabajamos con el objetivo de brindar soluciones eficientes, generar confianza y contribuir al desarrollo de cada proyecto en el que participamos.
-                            Nuestro compromiso es mirar hacia adelante, impulsar nuevas oportunidades y construir hoy la minería del futuro.</p>
-                    </div>    
             </div>
-               
-        </section>
-        
+
+    </header>
+
+    <main>
+
         <!-- CARRUSEL -->
         <section class="seccion-carrusel">
-            <div class="container">
+            <div class="contenedor-general">
                     <div id="carouselStacked" class="carousel slide">
 
                         <!-- TÍTULO Y BOTONES -->
@@ -231,7 +228,7 @@
 
     <!-- FOOTER -->
     <footer class="footer-mineria" id="contacto">
-        <div class="container">
+        <div class="contenedor-general">
             <div class="row align-items-center text-center gy-4">
 
                 <div class="col-12 col-md-6">

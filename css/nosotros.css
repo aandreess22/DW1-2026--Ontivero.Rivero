@@ -27,8 +27,15 @@
 
 body {
     margin: 0;
+    width: 100%;
     background-color: var(--color-blanco);
     font-family: var(--fuente-texto)
+}
+
+.contenedor-general {
+    width: 90%;
+    max-width: 1400px;
+    margin-inline: auto;
 }
 
 h1 {
@@ -62,11 +69,21 @@ img {
 }
 
 .mi-navbar {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: var(--color-gris);
-    color: var(--color-blanco);
     min-height: 85px;
-    height: auto;
+
+    background-color: rgb(102 102 87 / 85%);
+    color: var(--color-blanco);
+}
+
+.navbar-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .imagen-logo {
@@ -111,6 +128,48 @@ img {
 
 .mi-navbar .nav-link:hover{
     color: var(--color-amarillo);
+}
+
+/* ==============================
+   BANNER PRINCIPAL
+================================= */
+
+.banner-servicios {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(500px, 65vh, 750px);
+    
+
+    background-image: url("../imagenes/banners/banner-nosotros1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--color-blanco);
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 80%);
+}
+
+.banner-contenido {
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.linea-decorativa {
+    width: 100%;
+    border-top: 1px solid var(--color-amarillo);
+    background-color: var(--color-amarillo);
 }
 
 main {
@@ -353,6 +412,18 @@ main {
 }
 
 @media (max-width: 767.98px) {
+
+    .contenedor-general {
+        width: calc(100% - 32px);
+    }
+
+    .mi-navbar {
+        min-height: 75px;
+    }
+
+    .navbar-contenedor {
+        flex-wrap: wrap;
+    }
 
     .mi-navbar .navbar-collapse {
         padding-block: 0.5rem 1rem;

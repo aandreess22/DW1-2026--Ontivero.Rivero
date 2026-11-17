@@ -27,8 +27,15 @@
 
 body {
     margin: 0;
+    width: 100%;
     background-color: var(--color-blanco);
     font-family: var(--fuente-texto);
+}
+
+.contenedor-general {
+    width: 90%;
+    max-width: 1400px;
+    margin-inline: auto;
 }
 
 h1 {
@@ -62,11 +69,21 @@ img {
 }
 
 .mi-navbar {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: var(--color-gris);
-    color: var(--color-blanco);
     min-height: 85px;
-    height: auto;
+
+    background-color: rgb(102 102 87 / 85%);
+    color: var(--color-blanco);
+}
+
+.navbar-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .imagen-logo {
@@ -113,24 +130,62 @@ img {
     color: var(--color-amarillo);
 }
 
-main {
-    padding-top: 100px;
+/* ==============================
+   BANNER PRINCIPAL
+================================= */
+
+.banner-servicios {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(500px, 65vh, 750px);
+    
+
+    background-image: url("../imagenes/banners/banner-contacto2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--color-blanco);
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 80%);
+}
+
+.banner-contenido {
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.linea-decorativa {
+    width: 100%;
+    border-top: 1px solid var(--color-amarillo);
+    background-color: var(--color-amarillo);
 }
 
 .seccion-contacto {
-    padding-block: 1.5rem;
+    padding-block: clamp(2rem, 4vw, 4rem);
 }
 
 .formulario-contacto {
-    background-color: rgb(102 102 87 / 40%);
     width: 100%;
-    max-width: 650px;
+    height: 100%;
+    background-color: rgb(102 102 87 / 15%);
     border-radius: 10px;
 }
 
 .formulario-contacto .form-control {
     background-color: var(--color-blanco);
-    box-shadow: 0 2px 6px rgb(0 0 0 / 30%);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
     color: var(--color-negro);
 }
 
@@ -144,7 +199,7 @@ main {
 .formulario-contacto .form-text {
     font-size: var(--texto-secundario);
     font-family: var(--fuente-texto);
-    font-weight: 510;
+    font-weight: 500;
 }
 
 .formulario-contacto .form-control:hover {
@@ -160,7 +215,6 @@ main {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 0.4rem;
 
     width: 100%;
     padding: 0.8rem 1.5rem;
@@ -182,10 +236,8 @@ main {
 .btn-enviar:hover {
     background-color: var(--color-gris);
     color: var(--color-blanco);
-    border-color: var(--color-gris);
 
     transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgb(0 0 0 / 20%);
 }
 
 .btn-enviar:focus-visible {
@@ -198,55 +250,41 @@ main {
     box-shadow: none;
 }
 
-.card .card-titulo {
+.card-map .card-titulo {
     color: var(--color-oliva);
+    font-weight: 600;
+    text-align: center;
 }
 
-.card .card-titulo-2 {
+.card-map .card-titulo-2 {
     color: var(--color-oliva);
 }
  
-.card .card-text {
+.card-map .card-text {
     color: var(--color-gris);
     font-weight: 500;
+    text-align: center;
 }
 
 .card-map {
-    max-width: 650px;
-    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+    border: 2px solid var(--color-amarillo);
+    border-radius: 10px;
 }
 
 .card-map .card {
     height: 100%;
-    border: 2px solid var(--color-amarillo);
+    border: 2px solid var(--color-oliva);
 }
 
-.banner-contacto {
-    background-color: var(--color-amarillo);
-    padding-top: 1rem;
-}
-
-.banner-contacto img {
-    display: block;
+.card-map iframe {
     width: 100%;
-    height: clamp(220px, 35vw, 500px);
-    object-fit: cover;
-    object-position: center;
-}
-
-.titulo-banner-contacto {
-    text-align: center;
-    font-family: var(--fuente-titulo-principal);
-    font-size: var(--titulo-principal);
-    color: var(--color-gris);
-}
-
-.texto-banner-contacto {
-    text-align: center;
-    font-family: var(--fuente-texto);
-    font-size: var(--texto-primario);
-    font-weight: 600;
-
+    height: 100%;
+    border: 0;
 }
 
 /* ==============================
@@ -335,10 +373,21 @@ main {
 
 @media (max-width: 767.98px) {
 
+    .contenedor-general {
+        width: calc(100% - 32px);
+    }
+
+    .mi-navbar {
+        min-height: 75px;
+    }
+
+    .navbar-contenedor {
+        flex-wrap: wrap;
+    }
+
     .mi-navbar .navbar-collapse {
         width: 100%;
         margin: 0;
-        background-color: var(--color-gris);
     }
 
     .mi-navbar .navbar-nav {
@@ -365,6 +414,18 @@ main {
     width: clamp(100px, 25vw, 130px);
     }
 
+    .seccion-contacto {
+        padding-block: 2rem;
+    }
+
+    .formulario-contacto {
+        padding: 1rem;
+    }
+
+    .card-map {
+        min-height: 400px;
+    }
+
     .footer-mineria {
         padding-block: 2rem;
     }
@@ -373,12 +434,11 @@ main {
         letter-spacing: 0.12em;
     }
 
-    .mi-navbar #menuPrincipal .nav-link {
+    .mi-navbar .nav-link {
         color: var(--color-blanco);
-        background-color: var(--color-gris);
     }
 
-    .mi-navbar #menuPrincipal .nav-link:hover {
+    .mi-navbar .nav-link:hover {
         color: var(--color-amarillo);
     }
 }
